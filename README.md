@@ -13,12 +13,9 @@ A lightweight, efficient terminal-based text editor built in C, showcasing advan
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Data Structures Used](#data-structures-used)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
-- [Roadmap](#roadmap)
 - [Team](#team)
-- [License](#license)
 
 ---
 
