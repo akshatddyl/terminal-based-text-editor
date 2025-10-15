@@ -1,4 +1,4 @@
-# Terminal Text Editor with Advanced Data Structures
+# Terminal Based Text Editor with Advanced Data Structures
 
 A lightweight, efficient terminal-based text editor built in C, showcasing advanced data structures like **Rope**, **Stack**, and **ncurses** for a smooth editing experience.
 
