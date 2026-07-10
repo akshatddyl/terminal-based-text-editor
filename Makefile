@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -g
 LIBS = -lncurses
 
-SOURCES = editor.c rope.c undo.c
+SOURCES = editor.c rope.c undo.c trie.c hash.c search.c
 OBJECTS = $(SOURCES:.c=.o)
 TARGET = texteditor
 
@@ -20,4 +20,11 @@ clean:
 run: $(TARGET)
 	./$(TARGET)
 
-.PHONY: all clean run
+valgrind: $(TARGET)
+	valgrind --leak-check=full --show-leak-kinds=all --errors-for-leak-kinds=all ./$(TARGET)
+
+benchmark: rope.o benchmark.c
+	$(CC) $(CFLAGS) -o benchmark benchmark.c rope.o
+	./benchmark
+
+.PHONY: all clean run valgrind benchmark
